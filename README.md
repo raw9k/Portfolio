@@ -84,19 +84,6 @@ portfolio/
      python -m http.server 8000
      ```
      Then visit `http://localhost:8000`
-
----
-
-## 📸 Screenshots
-
-<div align="center">
-
-| Dark Mode | Light Mode |
-|-----------|------------|
-| ![Dark Mode](#) | ![Light Mode](#) |
-
-</div>
-
 ---
 
 ## 🎯 Sections
