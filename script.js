@@ -1,3 +1,13 @@
+// Preloader - Hide after page loads
+window.addEventListener('load', function() {
+    const preloader = document.getElementById('preloader');
+    if (preloader) {
+        setTimeout(() => {
+            preloader.classList.add('fade-out');
+        }, 800); // Show for 800ms then fade out
+    }
+});
+
 // Smooth scrolling for navigation links
 document.addEventListener("DOMContentLoaded", function () {
     const navLinks = document.querySelectorAll("nav ul li a");
@@ -51,11 +61,11 @@ function opentab(tabname) {
 
 // Typing effect for subtitle
 const subtitles = [
-    "Frontend Developer",
-    "Problem Solver",
-    "Tech Enthusiast",
-    "MERN Stack Developer",
-    "Competitive Programmer"
+  "Data Scienist",
+  "Machine Learning Engineer",
+  "MLOps Practitioner",
+  "Generative AI Explorer",
+  "Statistical Modeling Enthusiast"
 ];
 
 let subtitleIndex = 0;
@@ -171,7 +181,7 @@ function createThemeChangeEffect() {
     effect.style.left = '0';
     effect.style.width = '100%';
     effect.style.height = '100%';
-    effect.style.background = 'radial-gradient(circle, rgba(255,0,79,0.3) 0%, transparent 70%)';
+    effect.style.background = 'radial-gradient(circle, rgba(0,245,255,0.3) 0%, transparent 70%)';
     effect.style.pointerEvents = 'none';
     effect.style.zIndex = '9999';
     effect.style.opacity = '0';

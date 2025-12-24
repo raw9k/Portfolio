@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Manish Kulkarni | Portfolio</title>
+    <title>Rounak Kumar | Portfolio</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👨‍💻</text></svg>">
+    
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
     </style>
@@ -16,6 +20,21 @@
 </head>
 
 <body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader">
+            <div class="loader-ring"></div>
+            <img src="images/user.jpg" alt="Rounak Kumar" class="loader-image">
+        </div>
+    </div>
+
+    <!-- Animated Blob Background -->
+    <div class="blob-container">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
     <!-- Animated Background Particles -->
     <div class="particles">
         <div class="particle"></div>
@@ -51,18 +70,18 @@
             
             <div class="header-text">
                 <p id="subtitle" class="typing-effect"></p>
-                <h1 class="glitch" data-text="Hi, I'm Manish Kulkarni">Hi, I'm <span>Manish<br>Kulkarni</span></h1>
-                <p class="description"> Full Stack Developer | Problem Solver</p>
+                <h1 class="glitch" data-text="Hi, I'm Rounak Kumar">Hi, I'm <span>Rounak<br>Kumar</span></h1>
+                <p class="description">Data Scientist | ML Engineer </p>
                 
                 <div class="social-links">
-                    <a href="https://www.threads.com/@manish_k_2911" target="_blank" class="social-icon"><i class="fa-brands fa-threads"></i></a>
-                    <a href="https://github.com/manishcodesq" target="_blank" class="social-icon"><i class="fa-brands fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/manish-kulkarni-65102a2a2/" target="_blank" class="social-icon"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://www.instagram.com/manish_k_2911/" target="_blank" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://github.com/raw9k" target="_blank" class="social-icon"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/guptarounak" target="_blank" class="social-icon"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.kaggle.com/raw9kk" target="_blank" class="social-icon"><i class="fa-brands fa-kaggle"></i></a>
+                    <a href="mailto:rounakgupta914@gmail.com" target="_blank" class="social-icon"><i class="fa-solid fa-envelope"></i></a>
                 </div>
                 
                 <div class="cta-buttons">
-                    <a href="images/Manish_Resume.pdf" class="resume-btn glow-btn" download>
+                    <a href="images/Rounak_Kumar.pdf" class="resume-btn glow-btn" download>
                         <i class="fa-solid fa-download"></i> Download Resume
                     </a>
                     <a href="#contact" class="contact-btn">
@@ -80,30 +99,31 @@
             <div class="about-col1" data-aos="fade-right">
                 <div class="profile-image-wrapper">
                     <div class="profile-ring"></div>
-                    <img src="images/user.jpg" alt="Manish Kulkarni" class="profile-img">
+                    <img src="images/user.jpg" alt="Rounak Kumar" class="profile-img">
                 </div>
             </div>
             <div class="about-col2" data-aos="fade-left">
                 <h1 class="subtitle">About Me</h1>
                 <p class="about-description">
-                    Hi, I'm <strong>Manish Kulkarni</strong>, a third-year Engineering student at 
-                    <strong>Vishwakarma Institute of Information Technology, Pune</strong>. I have a passion for software development, 
-                    specializing in <strong>DSA, and the MERN stack</strong>. My focus is on preparing for software placements and 
-                    improving my skills in competitive programming.
+                    I'm an <strong>Integrated MSc student in Quantitative Economics & Data Science at BIT Mesra</strong> with a strong focus on building production-grade machine learning systems.
+                    <br><br>
+                    My work spans <strong>statistical modeling, machine learning, and MLOps</strong>, with hands-on experience deploying scalable ML pipelines using Docker, GitHub Actions, and Azure.
+                    <br><br>
+                                    
                 </p>
                 
                 <div class="stats-container">
                     <div class="stat-box">
-                        <h3>8.14</h3>
-                        <p>CGPA</p>
-                    </div>
-                    <div class="stat-box">
                         <h3>5+</h3>
-                        <p>Projects</p>
+                        <p> end-to-end ML Projects</p>
                     </div>
                     <div class="stat-box">
                         <h3>100+</h3>
-                        <p>Problems Solved</p>
+                        <p>DSA Questions</p>
+                    </div>
+                    <div class="stat-box">
+                        <h3>Joint President</h3>
+                        <p>Data Science Society</p>
                     </div>
                 </div>
             </div>
@@ -122,90 +142,121 @@
             <div class="stat-card github-card" data-aos="zoom-in">
                 <div class="stat-header">
                     <i class="fa-brands fa-github"></i>
-                    <h3>GitHub Stats</h3>
+                    <h3>GitHub Streak</h3>
                 </div>
                 <div class="stat-content">
-                    <img src="https://github-readme-stats.vercel.app/api?username=manishcodesq&show_icons=true&theme=radical&hide_border=true&bg_color=0D1117&title_color=ff004f&icon_color=ff6b9d&text_color=ffffff&ring_color=ff004f" 
-                         alt="GitHub Stats"
-                         loading="lazy">
+                    <img src="https://github-readme-streak-stats.herokuapp.com/?user=raw9k&theme=default" 
+                         alt="GitHub Streak">
                 </div>
-                <a href="https://github.com/manishcodesq" target="_blank" class="stat-link">
+                <a href="https://github.com/raw9k" target="_blank" class="stat-link">
                     View Profile <i class="fa-solid fa-arrow-right"></i>
                 </a>
             </div>
 
-           <!-- GitHub Streak Stats -->
-<div class="stat-card streak-card" data-aos="zoom-in" data-aos-delay="100">
-    <div class="stat-header">
-        <i class="fa-solid fa-fire"></i>
-        <h3>GitHub Streak</h3>
-    </div>
-    <div class="stat-content">
-        <img src="https://streak-stats.demolab.com?user=manishcodesq&theme=radical&hide_border=true&background=0D1117&stroke=ff004f&ring=ff004f&fire=ff6b9d&currStreakNum=ffffff&sideNums=ffffff&currStreakLabel=ff004f&sideLabels=ff6b9d&dates=ababab" 
-             alt="GitHub Streak"
-             loading="lazy">
-    </div>
-    <a href="https://github.com/manishcodesq" target="_blank" class="stat-link">
-        View Profile <i class="fa-solid fa-arrow-right"></i>
-    </a>
-</div>
-
-
             <!-- Top Languages -->
-            <div class="stat-card languages-card" data-aos="zoom-in" data-aos-delay="200">
+            <div class="stat-card languages-card" data-aos="zoom-in" data-aos-delay="100">
                 <div class="stat-header">
                     <i class="fa-solid fa-code"></i>
                     <h3>Most Used Languages</h3>
                 </div>
-                <div class="stat-content">
-                    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=manishcodesq&layout=compact&theme=radical&hide_border=true&bg_color=0D1117&title_color=ff004f&text_color=ffffff&icon_color=ff6b9d" 
-                         alt="Top Languages"
-                         loading="lazy">
+                <div class="stat-content" style="padding: 20px; display: flex; flex-direction: column; gap: 15px;">
+                    <div class="language-bar" style="display: block; width: 100%;">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+                            <span style="color: #fff; font-size: 14px; display: flex; align-items: center; gap: 8px;"><i class="devicon-python-plain colored"></i> Python</span>
+                            <span style="color: #ababab; font-size: 12px;">65%</span>
+                        </div>
+                        <div style="background: rgba(255,255,255,0.1); border-radius: 10px; height: 10px; overflow: hidden; width: 100%;">
+                            <div style="background: #3572A5; height: 100%; width: 65%; border-radius: 10px;"></div>
+                        </div>
+                    </div>
+                    <div class="language-bar" style="display: block; width: 100%;">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+                            <span style="color: #fff; font-size: 14px; display: flex; align-items: center; gap: 8px;"><i class="devicon-jupyter-plain colored"></i> Jupyter Notebook</span>
+                            <span style="color: #ababab; font-size: 12px;">20%</span>
+                        </div>
+                        <div style="background: rgba(255,255,255,0.1); border-radius: 10px; height: 10px; overflow: hidden; width: 100%;">
+                            <div style="background: #DA5B0B; height: 100%; width: 20%; border-radius: 10px;"></div>
+                        </div>
+                    </div>
+                    <div class="language-bar" style="display: block; width: 100%;">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+                            <span style="color: #fff; font-size: 14px; display: flex; align-items: center; gap: 8px;"><i class="devicon-docker-plain colored"></i> Dockerfile</span>
+                            <span style="color: #ababab; font-size: 12px;">5%</span>
+                        </div>
+                        <div style="background: rgba(255,255,255,0.1); border-radius: 10px; height: 10px; overflow: hidden; width: 100%;">
+                            <div style="background: #384d54; height: 100%; width: 5%; border-radius: 10px;"></div>
+                        </div>
+                    </div>
+                    <div class="language-bar" style="display: block; width: 100%;">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+                            <span style="color: #fff; font-size: 14px; display: flex; align-items: center; gap: 8px;"><i class="devicon-css3-plain colored"></i> CSS</span>
+                            <span style="color: #ababab; font-size: 12px;">3%</span>
+                        </div>
+                        <div style="background: rgba(255,255,255,0.1); border-radius: 10px; height: 10px; overflow: hidden; width: 100%;">
+                            <div style="background: #563d7c; height: 100%; width: 3%; border-radius: 10px;"></div>
+                        </div>
+                    </div>
                 </div>
-                <a href="https://github.com/manishcodesq?tab=repositories" target="_blank" class="stat-link">
+                <a href="https://github.com/raw9k?tab=repositories" target="_blank" class="stat-link">
                     View Repositories <i class="fa-solid fa-arrow-right"></i>
                 </a>
             </div>
 
-            <!-- LeetCode Stats -->
-            <div class="stat-card leetcode-card" data-aos="zoom-in" data-aos-delay="300">
+            <!-- Kaggle Stats -->
+            <div class="stat-card leetcode-card" data-aos="zoom-in" data-aos-delay="200">
                 <div class="stat-header">
-                    <i class="fa-solid fa-code-branch"></i>
-                    <h3>LeetCode Stats</h3>
+                    <i class="fa-brands fa-kaggle"></i>
+                    <h3>Kaggle Profile</h3>
                 </div>
                 <div class="stat-content">
-                    <img src="https://leetcard.jacoblin.cool/Manish291104?theme=dark&font=Karma&ext=heatmap" 
-                         alt="LeetCode Stats"
-                         loading="lazy">
+                    <a href="https://www.kaggle.com/raw9kk" target="_blank" style="display: flex; align-items: center; gap: 15px; text-decoration: none;">
+                        <i class="fa-brands fa-kaggle" style="font-size: 48px; color: #20beff;"></i>
+                        <div style="text-align: left;">
+                            <h4 style="color: #ffffff; margin: 0;">raw9kk</h4>
+                            <p style="color: #ababab; margin: 5px 0 0 0; font-size: 14px;">Kaggle Contributor</p>
+                        </div>
+                    </a>
                 </div>
-                <a href="https://leetcode.com/u/Manish291104/" target="_blank" class="stat-link">
+                <a href="https://www.kaggle.com/raw9kk" target="_blank" class="stat-link">
                     View Profile <i class="fa-solid fa-arrow-right"></i>
                 </a>
             </div>
         </div>
 
 
-        <!-- Quick Stats Banner -->
+        <!-- What I Bring to the Table -->
+        <div class="what-i-bring" data-aos="fade-up" style="margin-top: 80px;">
+            <h2 class="subtitle">What I Bring to the Table</h2>
+            <p class="section-description">Core competencies that drive my work</p>
+        </div>
+        
         <div class="quick-stats-banner" data-aos="fade-up">
             <div class="quick-stat">
-                <i class="fa-solid fa-code-commit"></i>
+                <i class="fa-solid fa-flask"></i>
                 <div class="quick-stat-info">
-                    <h4>Daily Commits</h4>
-                    <p>Building consistently</p>
+                    <h4>Data Science</h4>
+                    <p>Data-Driven Modeling & Production ML</p>
                 </div>
             </div>
             <div class="quick-stat">
-                <i class="fa-solid fa-trophy"></i>
+                <i class="fa-solid fa-brain"></i>
                 <div class="quick-stat-info">
-                    <h4>Problem Solver</h4>
-                    <p>100+ problems solved</p>
+                    <h4>ML Engineering</h4>
+                    <p>End-to-End ML Systems</p>
                 </div>
             </div>
             <div class="quick-stat">
-                <i class="fa-brands fa-osi"></i>
+                <i class="fa-solid fa-gears"></i>
                 <div class="quick-stat-info">
-                    <h4>Open Source</h4>
-                    <p>Hacktoberfest contributor</p>
+                    <h4>MLOps Expertise</h4>
+                    <p>Docker & CI/CD Pipelines</p>
+                </div>
+            </div>
+            <div class="quick-stat">
+                <i class="fa-solid fa-cloud"></i>
+                <div class="quick-stat-info">
+                    <h4>Cloud Deployment</h4>
+                    <p>Azure & AWS Platforms</p>
                 </div>
             </div>
         </div>
@@ -222,96 +273,141 @@
         <div class="skills-grid">
             <!-- Programming Languages -->
             <div class="skill-category" data-aos="fade-up">
-                <h2><i class="fa-solid fa-code"></i> Programming Languages</h2>
+                <h2><i class="fa-solid fa-code"></i> Languages</h2>
                 <div class="tech-icons">
-                    <div class="tech-item">
-                        <i class="devicon-cplusplus-plain colored"></i>
-                        <span>C++</span>
-                    </div>
                     <div class="tech-item">
                         <i class="devicon-python-plain colored"></i>
                         <span>Python</span>
                     </div>
                     <div class="tech-item">
-                        <i class="devicon-javascript-plain colored"></i>
-                        <span>JavaScript</span>
+                        <img src="https://www.r-project.org/logo/Rlogo.svg" alt="R" style="width: 50px; height: 50px;">
+                        <span>R</span>
+                    </div>
+                    <div class="tech-item">
+                        <i class="devicon-microsoftsqlserver-plain colored"></i>
+                        <span>SQL</span>
+                    </div>
+                    <div class="tech-item">
+                        <i class="devicon-cplusplus-plain colored"></i>
+                        <span>C++</span>
                     </div>
                 </div>
             </div>
 
-            <!-- Web Development -->
+            <!-- ML / Data Science -->
             <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
-                <h2><i class="fa-solid fa-laptop-code"></i> Web Development</h2>
+                <h2><i class="fa-solid fa-brain"></i> ML / Data Science</h2>
                 <div class="tech-icons">
                     <div class="tech-item">
-                        <i class="devicon-html5-plain colored"></i>
-                        <span>HTML5</span>
+                        <i class="devicon-scikitlearn-plain colored"></i>
+                        <span>Scikit-learn</span>
                     </div>
                     <div class="tech-item">
-                        <i class="devicon-css3-plain colored"></i>
-                        <span>CSS3</span>
+                        <i class="devicon-tensorflow-original colored"></i>
+                        <span>TensorFlow</span>
                     </div>
                     <div class="tech-item">
-                        <i class="devicon-react-original colored"></i>
-                        <span>React</span>
+                        <i class="devicon-pytorch-original colored"></i>
+                        <span>PyTorch</span>
                     </div>
                     <div class="tech-item">
-                        <i class="devicon-nodejs-plain colored"></i>
-                        <span>Node.js</span>
+                        <img src="https://lightgbm.readthedocs.io/en/latest/_static/LightGBM_logo_grey_text.svg" alt="LightGBM">
+                        <span>LightGBM</span>
                     </div>
                     <div class="tech-item">
-                        <i class="devicon-express-original"></i>
-                        <span>Express</span>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/c/cc/CatBoostLogo.png" alt="CatBoost">
+                        <span>CatBoost</span>
+                    </div>
+                    <div class="tech-item">
+                        <i class="fa-solid fa-chart-line"></i>
+                        <span>XGBoost</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Backend & APIs -->
+            <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+                <h2><i class="fa-solid fa-server"></i> Backend & Databases</h2>
+                <div class="tech-icons">
+                    <div class="tech-item">
+                        <i class="devicon-flask-original colored"></i>
+                        <span>Flask</span>
+                    </div>
+                    <div class="tech-item">
+                        <i class="devicon-fastapi-plain colored"></i>
+                        <span>FastAPI</span>
+                    </div>
+                    <div class="tech-item">
+                        <i class="devicon-streamlit-plain colored"></i>
+                        <span>Streamlit</span>
                     </div>
                     <div class="tech-item">
                         <i class="devicon-mongodb-plain colored"></i>
                         <span>MongoDB</span>
                     </div>
-                </div>
-            </div>
-
-            <!-- UI/UX Design -->
-            <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
-                <h2><i class="fa-solid fa-palette"></i> UI/UX Design</h2>
-                <div class="tech-icons">
                     <div class="tech-item">
-                        <i class="devicon-figma-plain colored"></i>
-                        <span>Figma</span>
-                    </div>
-                    <div class="tech-item">
-                        <i class="devicon-canva-original colored"></i>
-                        <span>Canva</span>
-                    </div>
-                    <div class="tech-item">
-                        <i class="devicon-tailwindcss-plain colored"></i>
-                        <span>Tailwind</span>
-                    </div>
-                    <div class="tech-item">
-                        <i class="devicon-bootstrap-plain colored"></i>
-                        <span>Bootstrap</span>
+                        <i class="devicon-mysql-plain colored"></i>
+                        <span>MySQL</span>
                     </div>
                 </div>
             </div>
 
-            <!-- Version Control & Deployment -->
+            <!-- MLOps & Cloud -->
             <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
-                <h2><i class="fa-solid fa-code-branch"></i> Version Control & Deployment</h2>
+                <h2><i class="fa-solid fa-cloud"></i> MLOps & Cloud</h2>
                 <div class="tech-icons">
                     <div class="tech-item">
-                        <i class="devicon-git-plain colored"></i>
-                        <span>Git</span>
+                        <i class="devicon-docker-plain colored"></i>
+                        <span>Docker</span>
                     </div>
                     <div class="tech-item">
-                        <i class="devicon-github-original"></i>
-                        <span>GitHub</span>
+                        <i class="devicon-githubactions-plain colored"></i>
+                        <span>GitHub Actions</span>
                     </div>
                     <div class="tech-item">
-                        <i class="devicon-vercel-original colored"></i>
-                        <span>Vercel</span>
+                        <i class="devicon-azure-plain colored"></i>
+                        <span>Azure</span>
                     </div>
                     <div class="tech-item">
-                        <i class="devicon-netlify-plain colored"></i>
-                        <span>Netlify</span>
+                        <i class="devicon-amazonwebservices-plain-wordmark colored"></i>
+                        <span>AWS</span>
+                    </div>
+                    <div class="tech-item">
+                        <img src="https://mlflow.org/img/mlflow-black.svg" alt="MLflow">
+                        <span>MLflow</span>
+                    </div>
+                    <div class="tech-item">
+                        <img src="https://www.comet.com/images/logo_comet_light.png" alt="Comet ML">
+                        <span>Comet ML</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Data Analytics -->
+            <div class="skill-category" data-aos="fade-up" data-aos-delay="400">
+                <h2><i class="fa-solid fa-chart-pie"></i> Data Analytics</h2>
+                <div class="tech-icons">
+                    
+                    <div class="tech-item">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/New_Power_BI_Logo.svg" alt="Power BI">
+                        <span>Power BI</span>
+                    </div>
+                    <div class="tech-item">
+                        <img src="https://www.vectorlogo.zone/logos/snowflake/snowflake-icon.svg" alt="Snowflake">
+                        <span>Snowflake</span>
+                    </div>
+                    <div class="tech-item">
+                        <img src="https://seaborn.pydata.org/_images/logo-mark-lightbg.svg" alt="Seaborn">
+                        <span>Seaborn</span>
+                    </div>
+                    
+                    <div class="tech-item">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/pandas/pandas-original.svg" alt="Pandas">
+                        <span>Pandas</span>
+                    </div>
+                    <div class="tech-item">
+                        <i class="devicon-microsoftsqlserver-plain colored"></i>
+                        <span>SQL</span>
                     </div>
                 </div>
             </div>
@@ -329,48 +425,75 @@
             <div class="project-lists">
                 <div class="project-item" data-aos="flip-left">
                     <div class="image-placeholder">
-                        <img src="images/abc.png" alt="Event Ease Project">
+                        <img src="images/Anime.png" alt="Hybrid Anime Recommendation System">
                         <div class="project-overlay">
-                            <a href="https://neuro-nest-nine.vercel.app/" target="_blank" class="overlay-btn">View Project</a>
+                            <a href="https://hybrid-anime-recommender.onrender.com" target="_blank" class="overlay-btn">View Project</a>
                         </div>
                     </div>
                     <div class="project-content">
-                        <h3>NeuroNest</h3>
-                        <p>Our AI-powered platform provides gentle, comprehensive cognitive assessments designed specifically for elderly users. We help detect early signs of dementia with care, compassion, and cutting-edge technology.
-
-</p>
+                        <h3>🎌 Hybrid Anime Recommendation System</h3>
+                        <p>Built a scalable hybrid recommendation system processing 70M+ user–anime ratings, combining collaborative and content-based filtering for improved recommendation accuracy. Features automated large-scale data ingestion using Azure Blob Storage and embedding-based hybrid recommender using Keras.</p>
                         <div class="project-tech">
-                            <span>React</span>
-                            <span>Express</span>
-                            <span>Tailwind CSS</span>
-                            <span>Node.js</span>
-                            <span>MongoDB</span>
-                            <span>Socket.io</span>
-                            <span>Machine Learning</span>
+                            <span>Python</span>
+                            <span>Keras</span>
+                            <span>Comet ML</span>
+                            <span>Docker</span>
+                            <span>GitHub Actions</span>
+                            <span>Azure Blob Storage</span>
+                            <span>Azure Web App</span>
                         </div>
-                        <a href="https://github.com/manishcodesq/NeuroNest" target="_blank" class="btn">
-                            <i class="fa-brands fa-github"></i> View on GitHub
+                        <a href="https://hybrid-anime-recommender.onrender.com" target="_blank" class="btn">
+                            <img src="https://cdn.simpleicons.org/render/00f5ff" alt="Render" style="width: 18px; height: 18px;"> Live Demo
                         </a>
                     </div>
                 </div>
                 
                 <div class="project-item" data-aos="flip-left" data-aos-delay="200">
                     <div class="image-placeholder">
-                        <img src="images/Screenshot 2025-03-11 213406.png" alt="Study Swap Project">
+                        <img src="images/network.png" alt="Network Security System">
                         <div class="project-overlay">
-                            <a href="https://github.com/CK-Check/ED-Project" target="_blank" class="overlay-btn">View Project</a>
+                            <a href="https://network-security-system.onrender.com" target="_blank" class="overlay-btn">View Project</a>
                         </div>
                     </div>
                     <div class="project-content">
-                        <h3>Study Swap</h3>
-                        <p>A platform for students to exchange and purchase educational materials, making learning more affordable and accessible.</p>
+                        <h3>🛡️ Network Security System</h3>
+                        <p>Designed and deployed a production-grade anomaly and phishing detection system with secure, automated workflows and real-time prediction capabilities. Features MongoDB Atlas–based ingestion with schema validation and MLflow integration for experiment tracking.</p>
                         <div class="project-tech">
-                            <span>HTML</span>
-                            <span>CSS</span>
-                            <span>JavaScript</span>
+                            <span>Python</span>
+                            <span>MongoDB Atlas</span>
+                            <span>MLflow</span>
+                            <span>FastAPI</span>
+                            <span>Docker</span>
+                            <span>GitHub Actions</span>
+                            <span>Azure Containers</span>
                         </div>
-                        <a href="https://github.com/CK-Check/ED-Project" target="_blank" class="btn">
-                            <i class="fa-brands fa-github"></i> View on GitHub
+                        <a href="https://network-security-system.onrender.com" target="_blank" class="btn">
+                            <img src="https://cdn.simpleicons.org/render/00f5ff" alt="Render" style="width: 18px; height: 18px;"> Live Demo
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-item" data-aos="flip-left" data-aos-delay="400">
+                    <div class="image-placeholder">
+                        <img src="images/Student.jpeg" alt="Student Performance Prediction">
+                        <div class="project-overlay">
+                            <a href="https://studentperformanceprediction-cygteybne4g2h6gw.centralus-01.azurewebsites.net" target="_blank" class="overlay-btn">View Project</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>🧠 Student Performance Prediction</h3>
+                        <p>Built a full-stack machine learning pipeline to predict student academic performance with R² = 0.87, emphasizing reproducibility, automation, and production deployment. Features end-to-end ML pipeline with data ingestion, validation, feature engineering, and model training.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Scikit-learn</span>
+                            <span>CatBoost</span>
+                            <span>Pandas</span>
+                            <span>Docker</span>
+                            <span>GitHub Actions</span>
+                            <span>Azure Web App</span>
+                        </div>
+                        <a href="https://studentperformanceprediction-cygteybne4g2h6gw.centralus-01.azurewebsites.net" target="_blank" class="btn">
+                            <i class="devicon-azure-plain"></i> Live Demo
                         </a>
                     </div>
                 </div>
@@ -390,36 +513,43 @@
                         <i class="fa-solid fa-envelope"></i>
                         <div>
                             <h3>Email</h3>
-                            <p>manishkulkarni375@gmail.com</p>
+                            <p>rounakgupta914@gmail.com</p>
                         </div>
                     </div>
                     <div class="contact-item">
-                        <i class="fa-solid fa-phone"></i>
+                        <i class="fa-brands fa-github"></i>
                         <div>
-                            <h3>Phone</h3>
-                            <p>+91 8275823714</p>
+                            <h3>GitHub</h3>
+                            <p>raw9k</p>
                         </div>
                     </div>
                     <div class="contact-item">
-                        <i class="fa-solid fa-location-dot"></i>
+                        <i class="fa-brands fa-linkedin"></i>
                         <div>
-                            <h3>Location</h3>
-                            <p>Pune, Maharashtra</p>
+                            <h3>LinkedIn</h3>
+                            <p>guptarounak</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fa-brands fa-kaggle"></i>
+                        <div>
+                            <h3>Kaggle</h3>
+                            <p>raw9kk</p>
                         </div>
                     </div>
                 </div>
                 
-                <form class="contact-form" data-aos="fade-left">
+                <form class="contact-form" data-aos="fade-left" action="https://formspree.io/f/xnjaryaj" method="POST">
                     <div class="form-group">
-                        <input type="text" required>
+                        <input type="text" name="name" required>
                         <label><i class="fa-solid fa-user"></i> Name</label>
                     </div>
                     <div class="form-group">
-                        <input type="email" required>
+                        <input type="email" name="email" required>
                         <label><i class="fa-solid fa-envelope"></i> Email</label>
                     </div>
                     <div class="form-group">
-                        <textarea rows="4" required></textarea>
+                        <textarea rows="4" name="message" required></textarea>
                         <label><i class="fa-solid fa-message"></i> Message</label>
                     </div>
                     <button type="submit" class="submit-btn">
@@ -430,109 +560,16 @@
             </div>
         </div>
     </section>
-    <!-- Binge-Worthy Favorites Section -->
-<section id="favorites">
-    <div class="container">
-        <h2 class="subtitle">When I'm Not Coding...</h2>
-        <p class="section-description">My all-time favorite TV series that never fail to inspire</p>
-        
-        <div class="favorites-grid">
-            <!-- Breaking Bad Card -->
-            <div class="favorite-card" data-aos="flip-up">
-                <div class="card-shine"></div>
-                <div class="show-logo">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Breaking_Bad_logo.svg/1200px-Breaking_Bad_logo.svg.png" alt="Breaking Bad Logo">
-                </div>
-                <div class="show-info">
-                    <h3>Breaking Bad</h3>
-                    <div class="rating">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <span>9.5/10</span>
-                    </div>
-                    <p class="show-tagline">"I am the one who knocks"</p>
-                    <p class="show-description">
-                        A chemistry teacher turned methamphetamine manufacturer. The perfect blend of drama, suspense, and character development that keeps you on the edge of your seat.
-                    </p>
-                    <div class="show-stats">
-                        <div class="stat">
-                            <i class="fa-solid fa-tv"></i>
-                            <span>5 Seasons</span>
-                        </div>
-                        <div class="stat">
-                            <i class="fa-solid fa-film"></i>
-                            <span>62 Episodes</span>
-                        </div>
-                    </div>
-                    <div class="show-links">
-                        <a href="https://www.imdb.com/title/tt0903747/" target="_blank" class="show-btn imdb-btn">
-                            <i class="fa-solid fa-arrow-up-right-from-square"></i> IMDB
-                        </a>
-                        <a href="https://en.wikipedia.org/wiki/Breaking_Bad" target="_blank" class="show-btn wiki-btn">
-                            <i class="fa-brands fa-wikipedia-w"></i> Wikipedia
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Better Call Saul Card -->
-            <div class="favorite-card" data-aos="flip-up" data-aos-delay="200">
-                <div class="card-shine"></div>
-                <div class="show-logo">
-                    <img src="images/Better_Call_Saul_logo.png" alt="Better Call Saul Logo">
-                </div>
-                <div class="show-info">
-                    <h3>Better Call Saul</h3>
-                    <div class="rating">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <span>9.0/10</span>
-                    </div>
-                    <p class="show-tagline">"It's all good, man!"</p>
-                    <p class="show-description">
-                        The transformation of Jimmy McGill into Saul Goodman. A masterclass in storytelling, cinematography, and character depth that rivals its predecessor.
-                    </p>
-                    <div class="show-stats">
-                        <div class="stat">
-                            <i class="fa-solid fa-tv"></i>
-                            <span>6 Seasons</span>
-                        </div>
-                        <div class="stat">
-                            <i class="fa-solid fa-film"></i>
-                            <span>63 Episodes</span>
-                        </div>
-                    </div>
-                    <div class="show-links">
-                        <a href="https://www.imdb.com/title/tt3032476/" target="_blank" class="show-btn imdb-btn">
-                            <i class="fa-solid fa-arrow-up-right-from-square"></i> IMDB
-                        </a>
-                        <a href="https://en.wikipedia.org/wiki/Better_Call_Saul" target="_blank" class="show-btn wiki-btn">
-                            <i class="fa-brands fa-wikipedia-w"></i> Wikipedia
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
+    
         <!--  Quote Section -->
         <div class="fun-quote">
             <i class="fa-solid fa-quote-left"></i>
-            <p>"Just like how Walt cooked blue meth, I code clean solutions. Minus the illegal part, of course!"</p>
+            <p>"Code that talks to data, systems that talk to users."</p>
             <i class="fa-solid fa-quote-right"></i>
         </div>
     </div>
 </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>Made with <i class="fa-solid fa-heart"></i> by Manish Kulkarni | © 2025 All Rights Reserved</p>
-    </footer>
 
     <!-- Scroll to Top Button -->
     <button id="scrollTop" onclick="scrollToTop()">
