@@ -130,6 +130,12 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ---
 
+## 🙏 Credits
+
+Original template by [Manish](https://github.com/manishcodesq) - Thank you for the amazing design!
+
+---
+
 <div align="center">
 
 **⭐ Star this repo if you found it helpful!**
