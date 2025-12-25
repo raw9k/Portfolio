@@ -9,7 +9,7 @@
 
 **A modern, responsive portfolio website showcasing my journey in Data Science & Machine Learning**
 
-[View Live Demo](#) • [Report Bug](https://github.com/raw9k/portfolio/issues) • [Request Feature](https://github.com/raw9k/portfolio/issues)
+[View Live Demo](https://rounak-kumar-portfolio.vercel.app/) • [Report Bug](https://github.com/raw9k/portfolio/issues) • [Request Feature](https://github.com/raw9k/portfolio/issues)
 
 </div>
 
@@ -84,19 +84,6 @@ portfolio/
      python -m http.server 8000
      ```
      Then visit `http://localhost:8000`
-
----
-
-## 📸 Screenshots
-
-<div align="center">
-
-| Dark Mode | Light Mode |
-|-----------|------------|
-| ![Dark Mode](#) | ![Light Mode](#) |
-
-</div>
-
 ---
 
 ## 🎯 Sections
