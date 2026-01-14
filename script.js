@@ -257,15 +257,9 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+document.querySelector('.contact-form').addEventListener('submit', function(e) {
 window.addEventListener('scroll', animateOnScroll);
 animateOnScroll(); // Initial check
-
-// Form submission (you can connect to a backend)
-document.querySelector('.contact-form').addEventListener('submit', function(e) {
-    e.preventDefault();
-    alert('Thank you for your message! I will get back to you soon.');
-    this.reset();
-});
 
 // Defer heavy animations until after initial render
 if ('requestIdleCallback' in window) {
