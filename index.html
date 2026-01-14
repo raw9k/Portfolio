@@ -5,18 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rounak Kumar | Portfolio</title>
     
-    <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👨‍💻</text></svg>">
+    <!-- Favicons (optimized set, cached) -->
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+    <meta name="theme-color" content="#0a0a0a">
     
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
     </style>
     
     <!-- Devicon CDN for Technology Logos -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
     
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/d0207c9ae1.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/d0207c9ae1.js" crossorigin="anonymous" async></script>
 </head>
 
 <body>
@@ -24,7 +29,7 @@
     <div id="preloader">
         <div class="loader">
             <div class="loader-ring"></div>
-            <img src="images/picofme (3).png" alt="Rounak Kumar" class="loader-image">
+            <img src="images/picofme (3).png" alt="Rounak Kumar" class="loader-image" loading="eager">
         </div>
     </div>
 
@@ -99,7 +104,7 @@
             <div class="about-col1" data-aos="fade-right">
                 <div class="profile-image-wrapper">
                     <div class="profile-ring"></div>
-                    <img src="images/picofme (3).png" alt="Rounak Kumar" class="profile-img">
+                    <img src="images/picofme (3).png" alt="Rounak Kumar" class="profile-img" loading="lazy">
                 </div>
             </div>
             <div class="about-col2" data-aos="fade-left">
@@ -481,8 +486,8 @@
                         </div>
                     </div>
                     <div class="project-content">
-                        <h3>🧠 Student Performance Prediction</h3>
-                        <p>Built a full-stack machine learning pipeline to predict student academic performance with R² = 0.87, emphasizing reproducibility, automation, and production deployment. Features end-to-end ML pipeline with data ingestion, validation, feature engineering, and model training.</p>
+                        <h3>🧠 Student Performance Predictor</h3>
+                        <p>Deployed an end-to-end pipeline that forecasts student scores (R² ≈ 0.87) with automated ingestion, data quality checks, feature scaling/encoding, and model retraining. CI/CD (GitHub Actions) ships Dockerized builds to Azure Web App, with drift-ready hooks for future monitoring.</p>
                         <div class="project-tech">
                             <span>Python</span>
                             <span>Scikit-learn</span>

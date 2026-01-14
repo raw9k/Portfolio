@@ -1,10 +1,20 @@
-// Preloader - Hide after page loads
+// Preloader - Hide faster and show content sooner
 window.addEventListener('load', function() {
     const preloader = document.getElementById('preloader');
     if (preloader) {
         setTimeout(() => {
             preloader.classList.add('fade-out');
-        }, 800); // Show for 800ms then fade out
+        }, 200); // Reduced to 200ms for faster display
+    }
+});
+
+// Show content immediately (don't wait for all images)
+document.addEventListener('DOMContentLoaded', function() {
+    const preloader = document.getElementById('preloader');
+    if (preloader) {
+        setTimeout(() => {
+            preloader.classList.add('fade-out');
+        }, 300);
     }
 });
 
@@ -61,7 +71,7 @@ function opentab(tabname) {
 
 // Typing effect for subtitle
 const subtitles = [
-  "Data Scienist",
+  "Data Scientist",
   "Machine Learning Engineer",
   "MLOps Practitioner",
   "Generative AI Explorer",
@@ -129,21 +139,34 @@ function scrollToTop() {
     });
 }
 
-// Animate elements on scroll (Simple AOS alternative)
+// Animate elements on scroll (Simple AOS alternative) - Throttled
+let scrollTimeout;
 function animateOnScroll() {
-    const elements = document.querySelectorAll('[data-aos]');
-    
-    elements.forEach(element => {
-        const elementTop = element.getBoundingClientRect().top;
-        const windowHeight = window.innerHeight;
+    clearTimeout(scrollTimeout);
+    scrollTimeout = setTimeout(() => {
+        const elements = document.querySelectorAll('[data-aos]');
         
-        if (elementTop < windowHeight - 100) {
-            element.style.opacity = '1';
-            element.style.transform = 'translateY(0)';
-        }
-    });
+        elements.forEach(element => {
+            const elementTop = element.getBoundingClientRect().top;
+            const windowHeight = window.innerHeight;
+            
+            if (elementTop < windowHeight - 100) {
+                element.style.opacity = '1';
+                element.style.transform = 'translateY(0)';
+            }
+        });
+    }, 50); // Throttle to 50ms for better performance
 }
 // ========== Theme Toggle Functionality ==========
+// Detect slow network and reduce animations
+if (navigator.connection) {
+    const connection = navigator.connection;
+    if (connection.saveData || connection.effectiveType === 'slow-2g' || connection.effectiveType === '2g' || connection.effectiveType === '3g') {
+        document.documentElement.style.setProperty('--animation-duration', '0s');
+        document.body.style.animationPlayState = 'paused';
+    }
+}
+
 const themeToggle = document.getElementById('theme-checkbox');
 const body = document.body;
 
@@ -243,3 +266,12 @@ document.querySelector('.contact-form').addEventListener('submit', function(e) {
     alert('Thank you for your message! I will get back to you soon.');
     this.reset();
 });
+
+// Defer heavy animations until after initial render
+if ('requestIdleCallback' in window) {
+    requestIdleCallback(() => {
+        animateOnScroll();
+    }, { timeout: 2000 });
+} else {
+    setTimeout(animateOnScroll, 2000);
+}

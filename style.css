@@ -154,8 +154,9 @@ body {
     height: 100%;
     z-index: -2;
     overflow: hidden;
-    filter: blur(80px);
-    opacity: 0.6;
+    filter: blur(60px);
+    opacity: 0.4;
+    will-change: filter;
 }
 
 .blob {
@@ -232,6 +233,7 @@ body.light-mode .blob-3 {
     height: 100%;
     z-index: -1;
     overflow: hidden;
+    opacity: 0.6;
 }
 
 .particle {
@@ -239,6 +241,7 @@ body.light-mode .blob-3 {
     background: var(--particle-color);
     border-radius: 50%;
     animation: float 15s infinite ease-in-out;
+    will-change: transform;
 }
 
 .particle:nth-child(1) {
