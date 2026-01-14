@@ -267,3 +267,57 @@ if ('requestIdleCallback' in window) {
 } else {
     setTimeout(animateOnScroll, 2000);
 }
+
+// Contact form enhanced submit with loading + success/error feedback
+const contactForm = document.querySelector('.contact-form');
+if (contactForm) {
+    const statusEl = contactForm.querySelector('.form-status');
+    const submitBtn = contactForm.querySelector('.submit-btn');
+
+    contactForm.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        if (!submitBtn) return contactForm.submit();
+
+        submitBtn.classList.add('loading');
+        submitBtn.disabled = true;
+        if (statusEl) {
+            statusEl.textContent = '';
+            statusEl.className = 'form-status';
+        }
+
+        try {
+            const formData = new FormData(contactForm);
+            const endpoint = contactForm.getAttribute('action');
+            const res = await fetch(endpoint, {
+                method: 'POST',
+                body: formData,
+                headers: { 'Accept': 'application/json' }
+            });
+
+            if (res.ok) {
+                contactForm.reset();
+                if (statusEl) {
+                    statusEl.textContent = 'Message sent! I will reply soon.';
+                    statusEl.classList.add('success');
+                }
+            } else {
+                const data = await res.json().catch(() => ({}));
+                const message = data?.errors?.[0]?.message || 'Unable to send right now. Please email me directly.';
+                if (statusEl) {
+                    statusEl.textContent = message;
+                    statusEl.classList.add('error');
+                }
+            }
+        } catch (err) {
+            if (statusEl) {
+                statusEl.textContent = 'Network issue—please try again or email me directly.';
+                statusEl.classList.add('error');
+            }
+        } finally {
+            if (submitBtn) {
+                submitBtn.classList.remove('loading');
+                submitBtn.disabled = false;
+            }
+        }
+    });
+}

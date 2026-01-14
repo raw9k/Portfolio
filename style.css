@@ -1376,12 +1376,33 @@ body.light-mode .contribution-content img {
     gap: 50px;
     margin-top: 50px;
     align-items: start;
+    position: relative;
+    padding: 30px;
+    border-radius: 26px;
+    background: linear-gradient(135deg, rgba(0,245,255,0.06), rgba(255,0,255,0.05));
+    border: 1px solid rgba(255,255,255,0.06);
+    box-shadow: 0 25px 60px rgba(0,0,0,0.35);
+    overflow: hidden;
+}
+
+.contact-container::after {
+    content: "";
+    position: absolute;
+    inset: -20px;
+    background:
+        radial-gradient(circle at 20% 25%, rgba(0,245,255,0.12), transparent 40%),
+        radial-gradient(circle at 80% 65%, rgba(255,0,255,0.10), transparent 45%);
+    filter: blur(18px);
+    opacity: 0.7;
+    pointer-events: none;
 }
 
 .contact-info {
     display: flex;
     flex-direction: column;
     gap: 30px;
+    position: relative;
+    z-index: 1;
 }
 
 .contact-item {
@@ -1393,12 +1414,19 @@ body.light-mode .contribution-content img {
     border-radius: 15px;
     transition: all 0.3s ease;
     border: 2px solid var(--border-color);
+    text-decoration: none;
+    color: var(--text-primary);
 }
 
 .contact-item:hover {
     background: rgba(0, 245, 255, 0.1);
     border-color: var(--accent-primary);
     transform: translateX(10px);
+}
+
+.contact-item:focus-visible {
+    outline: 2px solid var(--accent-primary);
+    outline-offset: 6px;
 }
 
 .contact-item i {
@@ -1418,10 +1446,12 @@ body.light-mode .contribution-content img {
 }
 
 .contact-form {
-    background: var(--bg-card);
+    position: relative;
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.04);
     padding: 40px;
     border-radius: 20px;
-    border: 2px solid var(--border-color);
+    border: 1px solid rgba(255,255,255,0.08);
 }
 
 .form-group {
@@ -1464,12 +1494,14 @@ body.light-mode .contribution-content img {
 .form-group input:valid ~ label,
 .form-group textarea:focus ~ label,
 .form-group textarea:valid ~ label {
-    top: -12px;
-    left: 10px;
+    top: -25px;
+    left: 12px;
     font-size: 12px;
     color: var(--accent-primary);
-    background: var(--bg-card);
-    padding: 0 8px;
+    background: var(--bg-secondary);
+    padding: 2px 10px;
+    border-radius: 8px;
+    z-index: 1;
 }
 
 .submit-btn {
@@ -1489,9 +1521,43 @@ body.light-mode .contribution-content img {
     transition: all 0.3s ease;
 }
 
+.submit-btn.loading {
+    position: relative;
+    pointer-events: none;
+    opacity: 0.85;
+}
+
+.submit-btn.loading span::after {
+    content: '';
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    margin-left: 10px;
+    border: 2px solid rgba(255,255,255,0.7);
+    border-top-color: transparent;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+    vertical-align: -2px;
+}
+
 .submit-btn:hover {
     transform: translateY(-3px);
     box-shadow: 0 15px 40px rgba(0, 245, 255, 0.5);
+}
+
+.form-status {
+    margin-top: 12px;
+    font-size: 14px;
+    min-height: 18px;
+    color: var(--text-secondary);
+}
+
+.form-status.success {
+    color: #34d399;
+}
+
+.form-status.error {
+    color: #f87171;
 }
 
 /* ========== Footer ========== */
