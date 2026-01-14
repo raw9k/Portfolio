@@ -1,21 +1,20 @@
-// Preloader - Hide faster and show content sooner
-window.addEventListener('load', function() {
+// Preloader - hide fast with a hard fallback
+function hidePreloader() {
     const preloader = document.getElementById('preloader');
     if (preloader) {
-        setTimeout(() => {
-            preloader.classList.add('fade-out');
-        }, 200); // Reduced to 200ms for faster display
+        preloader.classList.add('fade-out');
+        // Final removal after transition
+        setTimeout(() => preloader.style.display = 'none', 600);
     }
+}
+
+window.addEventListener('load', () => {
+    setTimeout(hidePreloader, 200); // normal path
 });
 
-// Show content immediately (don't wait for all images)
-document.addEventListener('DOMContentLoaded', function() {
-    const preloader = document.getElementById('preloader');
-    if (preloader) {
-        setTimeout(() => {
-            preloader.classList.add('fade-out');
-        }, 300);
-    }
+// Fallback in case window load is delayed or fails (e.g., blocked assets)
+document.addEventListener('DOMContentLoaded', () => {
+    setTimeout(hidePreloader, 1200);
 });
 
 // Smooth scrolling for navigation links
@@ -257,7 +256,6 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-document.querySelector('.contact-form').addEventListener('submit', function(e) {
 window.addEventListener('scroll', animateOnScroll);
 animateOnScroll(); // Initial check
 
